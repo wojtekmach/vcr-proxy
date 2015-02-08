@@ -1,4 +1,4 @@
-require "vcr/proxy/version"
+require 'vcr/proxy/version'
 
 module VCR
   module Proxy
