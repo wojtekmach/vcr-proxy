@@ -24,4 +24,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "shamrock"
   spec.add_dependency "rack"
   spec.add_dependency "vcr"
+  spec.add_dependency "webmock"
 end

@@ -1,2 +1,7 @@
 #!/usr/bin/env ruby
 require 'rack'
+require 'vcr/proxy'
+
+backend_uri = URI(ARGV[0])
+record = ARGV[1] == "true"
+Rack::Handler::WEBrick.run(VCR::Proxy::Server.new(backend_uri, record: record))
